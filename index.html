@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Albumatic help and contact</title>
-  <meta name="description" content="Help for Albumatic, the app that sorts your camera photos into trip and month albums without ever moving, editing or deleting them.">
+  <meta name="description" content="Help for Albumatic, the Android and iPhone app that sorts your camera photos into trip and month albums without ever moving, editing or deleting them.">
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon" href="icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
         <span>Albumatic</span>
       </a>
       <p class="promise">Your photos are never moved, edited or deleted.</p>
-      <p>Albumatic sorts the photos in your phone's Camera folder into albums by itself: one for each month at home, and one for each trip abroad. The albums exist only inside the app.</p>
+      <p>Albumatic sorts the photos you take into albums by itself: one for each month at home, and one for each trip abroad. The albums exist only inside the app.</p>
     </div>
   </header>
 
@@ -28,7 +28,11 @@
     <h1>Help</h1>
 
     <h2>Who is Albumatic for?</h2>
-    <p>People who leave their photos where the camera saves them and never get round to sorting them. Albumatic only looks at the Camera folder (<code>DCIM/Camera</code>). If you already move your photos into folders of your own, Albumatic won't see those photos, and it may have little or nothing to show you.</p>
+    <p>People who keep taking photos and never get round to sorting them.</p>
+    <ul>
+      <li><strong>Android:</strong> Albumatic only looks at the Camera folder (<code>DCIM/Camera</code>). If you already move your photos into folders of your own, Albumatic won't see those photos, and it may have little or nothing to show you.</li>
+      <li><strong>iPhone:</strong> Albumatic looks at your photo library and uses the photos you take: photos with a location, or with camera details. Screenshots, and images saved from chats or other apps, are left out.</li>
+    </ul>
 
     <h2>How albums are made</h2>
     <ul>
@@ -36,21 +40,23 @@
       <li>Photos taken in another country become a trip, such as “UK Sep–Oct 2026”. A trip ends when you take a photo at home, or after a break of more than 7 days without photos (change this under Settings → Trip gap).</li>
       <li>One or two photos at an airport on the way (a stopover) join the trip next to them.</li>
       <li>A photo without a location takes the country of the photos taken within 12 hours of it. If there are none, it goes to Unknown location.</li>
-      <li>The country comes from the photo's GPS location, looked up on your phone. Albumatic has no internet access.</li>
+      <li>The country comes from the photo's GPS location, looked up on your phone from maps that come with the app.</li>
     </ul>
 
     <h2>Changing a trip</h2>
-    <p>Open a trip to find its buttons: Rename, Merge (with the trip before or after) and Undo. Tap Select, choose photos, then share them, add them to one of your own albums, move them to another trip, or start a new trip at a photo. New photos never undo your changes.</p>
+    <p>Open a trip to find its buttons: Rename, Merge (with the trip before or after) and Undo. Tap Select, choose photos, then share them, add them to one of your own albums, move them with “Move to…” to another trip or back to your months at home (back home: on Android from version 1.0.1), or start a new trip at a photo. Undo puts a trip back the way Albumatic made it. New photos never undo your changes.</p>
 
     <h2>Why are some photos missing?</h2>
     <ul>
-      <li>Albumatic only looks at the Camera folder (<code>DCIM/Camera</code>). Photos you moved into other folders (with your Gallery app, a file manager or a computer) aren't included, and neither are screenshots or photos saved from WhatsApp or other apps.</li>
-      <li>On Android 14 and later, if you chose “Allow limited access”, Albumatic sees only the photos you picked. Tap “Allow all photos” on the albums screen.</li>
-      <li>If trips are all in Unknown location, allow access to photo locations in Android Settings → Apps → Albumatic → Permissions → Photos and videos.</li>
+      <li><strong>Android:</strong> Albumatic only looks at the Camera folder (<code>DCIM/Camera</code>). Photos you moved into other folders (with your Gallery app, a file manager or a computer) aren't included, and neither are screenshots or photos saved from WhatsApp or other apps.</li>
+      <li><strong>Android 14 and later:</strong> if you chose “Allow limited access”, Albumatic sees only the photos you picked. Tap “Allow all photos” on the albums screen.</li>
+      <li><strong>Android:</strong> if trips are all in Unknown location, allow access to photo locations in Android Settings → Apps → Albumatic → Permissions → Photos and videos.</li>
+      <li><strong>iPhone:</strong> photos with neither a location nor camera details are left out, which covers screenshots and most images saved from WhatsApp, other apps or the web. A photo kept only in iCloud that has no location can be missing too, because Albumatic checks only what is on your iPhone.</li>
+      <li><strong>iPhone:</strong> if you chose “Limited Access”, Albumatic sees only the photos you picked. In the Settings app, tap Albumatic → Photos and choose “Full Access”.</li>
     </ul>
 
     <h2>Is it safe for my photos?</h2>
-    <p>Yes, by design. Android gives Albumatic read-only access, so it can't change, move or delete a photo even by mistake. Removing an album in Albumatic removes only the album; your photos stay where they are. Uninstalling the app removes its albums and nothing else. “Open in…” and “Share” pass a photo to the app you choose, which then works under its own rules.</p>
+    <p>Yes, by design. Albumatic only reads your photos and contains no code that changes, moves or deletes one. On Android, the system gives it read-only access, so it couldn't even by mistake. On iPhone, iOS has no read-only setting, but it asks you before any app edits or deletes a photo. Removing an album in Albumatic removes only the album; your photos stay where they are. Uninstalling the app removes its albums and nothing else. “Share” (and “Open in…” on Android) passes a photo to the app you choose, which then works under its own rules.</p>
 
     <section class="contact">
       <h2>Contact</h2>
