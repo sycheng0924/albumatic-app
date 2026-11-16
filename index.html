@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albumatic help and contact</title>
+  <meta name="description" content="Help for Albumatic, the app that sorts your camera photos into trip and month albums without ever moving, editing or deleting them.">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <img src="icon-180.png" alt="">
+        <span>Albumatic</span>
+      </a>
+      <p class="promise">Your photos are never moved, edited or deleted.</p>
+      <p>Albumatic sorts the photos in your phone's Camera folder into albums by itself: one for each month at home, and one for each trip abroad. The albums exist only inside the app.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Help</h1>
+
+    <h2>How albums are made</h2>
+    <ul>
+      <li>Photos taken in your home country go into one album per month.</li>
+      <li>Photos taken in another country become a trip, such as “UK Sep–Oct 2026”. A trip ends when you take a photo at home, or after a break of more than 7 days without photos (change this under Settings → Trip gap).</li>
+      <li>One or two photos at an airport on the way (a stopover) join the trip next to them.</li>
+      <li>A photo without a location takes the country of the photos taken within 12 hours of it. If there are none, it goes to Unknown location.</li>
+      <li>The country comes from the photo's GPS location, looked up on your phone. Albumatic has no internet access.</li>
+    </ul>
+
+    <h2>Changing a trip</h2>
+    <p>Open a trip and tap ⋮ to rename it, merge it with the trip before or after, or undo your changes. Hold a photo to select it, then start a new trip at that photo, move photos to another trip, share them or add them to one of your own albums. New photos never undo your changes.</p>
+
+    <h2>Why are some photos missing?</h2>
+    <ul>
+      <li>Albumatic only looks at the Camera folder (<code>DCIM/Camera</code>). Screenshots and photos saved from WhatsApp or other apps aren't included.</li>
+      <li>On Android 14 and later, if you chose “Allow limited access”, Albumatic sees only the photos you picked. Tap “Allow all photos” on the albums screen.</li>
+      <li>If trips are all in Unknown location, allow access to photo locations in Android Settings → Apps → Albumatic → Permissions → Photos and videos.</li>
+    </ul>
+
+    <h2>Is it safe for my photos?</h2>
+    <p>Yes, by design. Android gives Albumatic read-only access, so it can't change, move or delete a photo even by mistake. Removing an album in Albumatic removes only the album; your photos stay where they are. Uninstalling the app removes its albums and nothing else. “Open in…” and “Share” pass a photo to the app you choose, which then works under its own rules.</p>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:jsvk.uk@gmail.com?subject=Albumatic">jsvk.uk@gmail.com</a>. Say which phone you use and what happened, and include a screenshot if you can. Albumatic is made by JSVK Limited.</p>
+    </section>
+
+    <h2>Disclaimer</h2>
+    <p class="meta">Albumatic only reads your photos and never changes them. Keep your own backups as you would anyway: the app can't recover photos that you or another app delete.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="privacy.html">Privacy policy</a>
+      <span>© 2026 JSVK Limited</span>
+    </div>
+  </footer>
+</body>
+</html>
